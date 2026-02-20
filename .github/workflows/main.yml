@@ -1,7 +1,9 @@
 concurrency: github
 description:             - name: Cache
   uses: actions/cache@v5.0.3
-  with:
+  with:- name: Run Parasoft Jtest
+  uses: parasoft/run-jtest-action@2.0.2
+
     # A list of files, directories, and wildcard patterns to cache and restore
     path: 
     # An explicit key for restoring and saving the cache
