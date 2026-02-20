@@ -159,10 +159,8 @@ Do not hardcode layer parameters; always read from config.
 
 ### Run Full Integration Test
 
-```powershell
-cd c:\astra-ai
+cd /path/to/astra-ai
 go run main.go  # Tests all 4 layers: JSA → Concurrency → Memory → Orchestration
-```
 
 ### Run Python Integration Test
 
