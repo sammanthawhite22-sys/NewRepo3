@@ -259,10 +259,10 @@ if analysis.IsSafe {
     return llmOutput
 } else {
     // Log audit event (includes analysis.Explanation)
-    compliance.log_event(AuditEvent{
-        event_type: "SAFETY_GATE_FAILED",
-        resource: "llm_output",
-        explanation: analysis.Explanation
+    compliance.LogEvent(AuditEvent{
+        EventType:   "SAFETY_GATE_FAILED",
+        Resource:    "llm_output",
+        Explanation: analysis.Explanation,
     })
     return "I cannot provide that response: " + analysis.Explanation
 }
