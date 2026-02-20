@@ -38,7 +38,7 @@ if !analysis.IsSafe {
 All user-facing outputs must pass `shield.Analyze()` before return.
 
 ---
-`concurrency-engine/worker.go`)
+### 2. **Concurrency Engine** (`concurrency-engine/worker.go`)
 Worker pool for parallel task processing.
 
 **Key types:**
